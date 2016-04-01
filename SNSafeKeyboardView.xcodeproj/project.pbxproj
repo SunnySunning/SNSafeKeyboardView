@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B029ED5E1CAE24B000D7F708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B029ED5D1CAE24B000D7F708 /* main.m */; };
+		B029ED611CAE24B000D7F708 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B029ED601CAE24B000D7F708 /* AppDelegate.m */; };
+		B029ED641CAE24B000D7F708 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B029ED631CAE24B000D7F708 /* ViewController.m */; };
+		B029ED671CAE24B000D7F708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B029ED651CAE24B000D7F708 /* Main.storyboard */; };
+		B029ED691CAE24B000D7F708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B029ED681CAE24B000D7F708 /* Assets.xcassets */; };
+		B029ED6C1CAE24B000D7F708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B029ED6A1CAE24B000D7F708 /* LaunchScreen.storyboard */; };
+		B029ED751CAE24CA00D7F708 /* SafeKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B029ED741CAE24CA00D7F708 /* SafeKeyboardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B029ED591CAE24B000D7F708 /* SNSafeKeyboardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSafeKeyboardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B029ED5D1CAE24B000D7F708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B029ED5F1CAE24B000D7F708 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B029ED601CAE24B000D7F708 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B029ED621CAE24B000D7F708 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B029ED631CAE24B000D7F708 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B029ED661CAE24B000D7F708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B029ED681CAE24B000D7F708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B029ED6B1CAE24B000D7F708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B029ED6D1CAE24B000D7F708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B029ED731CAE24CA00D7F708 /* SafeKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKeyboardView.h; sourceTree = "<group>"; };
+		B029ED741CAE24CA00D7F708 /* SafeKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKeyboardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B029ED561CAE24B000D7F708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B029ED501CAE24B000D7F708 = {
+			isa = PBXGroup;
+			children = (
+				B029ED5B1CAE24B000D7F708 /* SNSafeKeyboardView */,
+				B029ED5A1CAE24B000D7F708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B029ED5A1CAE24B000D7F708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B029ED591CAE24B000D7F708 /* SNSafeKeyboardView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B029ED5B1CAE24B000D7F708 /* SNSafeKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				B029ED731CAE24CA00D7F708 /* SafeKeyboardView.h */,
+				B029ED741CAE24CA00D7F708 /* SafeKeyboardView.m */,
+				B029ED5F1CAE24B000D7F708 /* AppDelegate.h */,
+				B029ED601CAE24B000D7F708 /* AppDelegate.m */,
+				B029ED621CAE24B000D7F708 /* ViewController.h */,
+				B029ED631CAE24B000D7F708 /* ViewController.m */,
+				B029ED651CAE24B000D7F708 /* Main.storyboard */,
+				B029ED681CAE24B000D7F708 /* Assets.xcassets */,
+				B029ED6A1CAE24B000D7F708 /* LaunchScreen.storyboard */,
+				B029ED6D1CAE24B000D7F708 /* Info.plist */,
+				B029ED5C1CAE24B000D7F708 /* Supporting Files */,
+			);
+			path = SNSafeKeyboardView;
+			sourceTree = "<group>";
+		};
+		B029ED5C1CAE24B000D7F708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B029ED5D1CAE24B000D7F708 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B029ED581CAE24B000D7F708 /* SNSafeKeyboardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B029ED701CAE24B000D7F708 /* Build configuration list for PBXNativeTarget "SNSafeKeyboardView" */;
+			buildPhases = (
+				B029ED551CAE24B000D7F708 /* Sources */,
+				B029ED561CAE24B000D7F708 /* Frameworks */,
+				B029ED571CAE24B000D7F708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSafeKeyboardView;
+			productName = SNSafeKeyboardView;
+			productReference = B029ED591CAE24B000D7F708 /* SNSafeKeyboardView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B029ED511CAE24B000D7F708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LMC;
+				TargetAttributes = {
+					B029ED581CAE24B000D7F708 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9E8ET86RJ8;
+					};
+				};
+			};
+			buildConfigurationList = B029ED541CAE24B000D7F708 /* Build configuration list for PBXProject "SNSafeKeyboardView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B029ED501CAE24B000D7F708;
+			productRefGroup = B029ED5A1CAE24B000D7F708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B029ED581CAE24B000D7F708 /* SNSafeKeyboardView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B029ED571CAE24B000D7F708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B029ED6C1CAE24B000D7F708 /* LaunchScreen.storyboard in Resources */,
+				B029ED691CAE24B000D7F708 /* Assets.xcassets in Resources */,
+				B029ED671CAE24B000D7F708 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B029ED551CAE24B000D7F708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B029ED751CAE24CA00D7F708 /* SafeKeyboardView.m in Sources */,
+				B029ED641CAE24B000D7F708 /* ViewController.m in Sources */,
+				B029ED611CAE24B000D7F708 /* AppDelegate.m in Sources */,
+				B029ED5E1CAE24B000D7F708 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B029ED651CAE24B000D7F708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B029ED661CAE24B000D7F708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B029ED6A1CAE24B000D7F708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B029ED6B1CAE24B000D7F708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B029ED6E1CAE24B000D7F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B029ED6F1CAE24B000D7F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B029ED711CAE24B000D7F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SNSafeKeyboardView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.befc.SNSafeKeyboardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B029ED721CAE24B000D7F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SNSafeKeyboardView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.befc.SNSafeKeyboardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B029ED541CAE24B000D7F708 /* Build configuration list for PBXProject "SNSafeKeyboardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B029ED6E1CAE24B000D7F708 /* Debug */,
+				B029ED6F1CAE24B000D7F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B029ED701CAE24B000D7F708 /* Build configuration list for PBXNativeTarget "SNSafeKeyboardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B029ED711CAE24B000D7F708 /* Debug */,
+				B029ED721CAE24B000D7F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B029ED511CAE24B000D7F708 /* Project object */;
+}
