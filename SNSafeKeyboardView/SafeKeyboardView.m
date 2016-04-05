@@ -8,6 +8,13 @@
 
 #import "SafeKeyboardView.h"
 
+@interface SafeKeyboardView ()<UIGestureRecognizerDelegate>
+
+@property (nonatomic,assign) BOOL flag;
+@property (nonatomic,weak) NSTimer *timer;
+
+@end
+
 @implementation SafeKeyboardView
 
 + (id)show
@@ -52,17 +59,17 @@
     
     //keyBoardView
     NSMutableArray *tempArray = [NSMutableArray arrayWithArray:@[@"1",@"2",@"3",@"4",@"5",
-                           @"6",@"7",@"8",@"9",@"0"]];
+                                                                 @"6",@"7",@"8",@"9",@"0"]];
     
     
     
-
+    
     //Begin  添加混淆计算
     NSMutableArray *mixArray = [NSMutableArray array];
     for (NSInteger n = [tempArray count]; n > 0; n--)
     {
-//        srandom((unsigned)time(0));
-//        int randomInt = (int)(rand() / (float)RAND_MAX * n);
+        //        srandom((unsigned)time(0));
+        //        int randomInt = (int)(rand() / (float)RAND_MAX * n);
         int randomInt = arc4random() % n;
         [mixArray addObject:tempArray[randomInt]];
         [tempArray removeObjectAtIndex:randomInt];
@@ -87,7 +94,7 @@
         [numBt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         numBt.titleLabel.font = [UIFont systemFontOfSize:27.0];
         
-       
+        
         if (i == 9 || i == 11)
         {
             numBt.tag = i + 1;
@@ -111,21 +118,13 @@
             }
             [numBt setBackgroundColor:[UIColor whiteColor]];
         }
-//        else if (i == 10)
-//        {
-//            [numBt setTitle:tempArray[i - 1] forState:UIControlStateNormal];
-//            [numBt setTitle:tempArray[i - 1] forState:UIControlStateHighlighted];
-//            [numBt setBackgroundColor:[UIColor whiteColor]];
-//            numBt.tag = 0;
-//        }
-//        else
-//        {
-//            [numBt setTitle:tempArray[i] forState:UIControlStateNormal];
-//            [numBt setTitle:tempArray[i] forState:UIControlStateHighlighted];
-//            [numBt setBackgroundColor:[UIColor whiteColor]];
-//        }
-        
-        [numBt addTarget:self action:@selector(numBtTouch:) forControlEvents:UIControlEventTouchUpInside];
+        if (i == 11)
+        {
+            [numBt addTarget:self action:@selector(cancelBtTouchDown:) forControlEvents:UIControlEventTouchDown];
+            [numBt addTarget:self action:@selector(cancelBtTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        else
+            [numBt addTarget:self action:@selector(numBtTouch:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     
@@ -160,12 +159,29 @@
 {
     if (bt.tag == 10) return;
     if ([self.delegate respondsToSelector:@selector(safeKeyboardView:andDidSelectNum:isCancel:)])
-    {
-        if (bt.tag == 12)
-            [self.delegate safeKeyboardView:self andDidSelectNum:bt.tag isCancel:YES];
-        else
-            [self.delegate safeKeyboardView:self andDidSelectNum:bt.tag isCancel:NO];
-    }
+        [self.delegate safeKeyboardView:self andDidSelectNum:bt.tag isCancel:NO];
+}
+
+- (void)cancelBtTouchDown:(UIButton *)bt
+{
+    NSLog(@"cancelBtTouchDown");
+    
+    NSTimer *timer = [NSTimer timerWithTimeInterval:0.15 target:self selector:@selector(cancelTimer:) userInfo:@{@"userInfo":bt} repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [timer fire];
+    self.timer = timer;
+}
+
+- (void)cancelBtTouchUp:(UIButton *)bt
+{
+    NSLog(@"cancelBtTouchUp");
+    [self.timer invalidate];
+}
+
+- (void)cancelTimer:(NSTimer *)timer
+{
+    UIButton *bt = timer.userInfo[@"userInfo"];
+    [self.delegate safeKeyboardView:self andDidSelectNum:bt.tag isCancel:YES];
 }
 
 @end

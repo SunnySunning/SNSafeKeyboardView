@@ -26,6 +26,15 @@
     textField.delegate = self;
     self.textField = textField;
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //    SafeKeyboardView *keyBoardView = [[SafeKeyboardView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 260, self.view.frame.size.width, 260)];
     //    keyBoardView.delegate = self;
     //    [self.view addSubview:keyBoardView];
@@ -65,6 +74,10 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.textField resignFirstResponder];
+    
+    srand((unsigned)time(0));
+    int i = rand() % 5;
+    NSLog(@"%d",i);
 }
 
 - (void)didReceiveMemoryWarning {
